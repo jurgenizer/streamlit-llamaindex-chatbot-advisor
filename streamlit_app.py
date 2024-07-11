@@ -3,7 +3,16 @@ import openai
 from llama_index.llms.openai import OpenAI
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 
+
+
 st.set_page_config(page_title="adlicious advisor 💬 ", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
+
+st.markdown("""<style>
+              div.block-container {
+                            max-width: calc(-1rem + 100vw);
+                }
+</style>""", unsafe_allow_html=True)
+
 openai.api_key = st.secrets.openai_key
 st.title("adlicious advisor 💬")
 st.info("Hello I am an AI bot: Chat with me about anything! Interested in running ads with AI? Contact our adlicious team.")
