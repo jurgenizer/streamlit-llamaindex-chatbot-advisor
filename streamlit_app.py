@@ -8,8 +8,11 @@ st.set_page_config(page_title="adlicious advisor 💬 ", page_icon="🦙", layou
 css = r'''
     <style>
         [data-testid="stForm"] {border: 0px}
+        body {
+         border: none;
+        }
           div.appview-container {
-                            border: 0px
+                             border: none;
                 }
         div.block-container {
                             max-width: 100vw;
@@ -18,9 +21,6 @@ css = r'''
 '''
 
 st.markdown(css, unsafe_allow_html=True)
-
-
-
 
 
 
