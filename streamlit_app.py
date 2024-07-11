@@ -7,8 +7,8 @@ st.set_page_config(page_title="adlicious advisor 💬 ", page_icon="🦙", layou
 
 st.markdown("""<style>
               div.block-container {
-                            max-width: calc(-0.5rem + 100vw);
-                            padding: 15rem 0.6rem 0.6rem;
+                            max-width: 100vw;
+                            padding: 1.3rem 0.6rem 0.6rem;
                 }
 </style>""", unsafe_allow_html=True)
 
