@@ -5,11 +5,21 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 
 st.set_page_config(page_title="adlicious advisor 💬 ", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
 
-st.markdown("""<style>
-              div.block-container {
+css = r'''
+    <style>
+        [data-testid="stForm"] {border: 0px}
+        div.block-container {
                             max-width: 100vw;
                 }
-</style>""", unsafe_allow_html=True)
+    </style>
+'''
+
+st.markdown(css, unsafe_allow_html=True)
+
+
+
+
+
 
 openai.api_key = st.secrets.openai_key
 st.title("adlicious advisor 💬")
