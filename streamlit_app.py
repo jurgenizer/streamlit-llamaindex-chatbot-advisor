@@ -7,10 +7,8 @@ st.set_page_config(page_title="adlicious advisor 💬 ", page_icon="🦙", layou
 
 css = r'''
     <style>
-        [data-testid="stForm"] {border: 0px}
-        *, :after, :before {
-        border: none;
-        }
+        [data-testid="stForm"] {border: 0px;}
+        [data-testid="stApp"] {border: 0px}
         div.block-container {
                             max-width: 100vw;
                 }
