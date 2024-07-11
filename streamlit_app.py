@@ -3,13 +3,12 @@ import openai
 from llama_index.llms.openai import OpenAI
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 
-
-
 st.set_page_config(page_title="adlicious advisor 💬 ", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
 
 st.markdown("""<style>
               div.block-container {
-                            max-width: calc(-1rem + 100vw);
+                            max-width: calc(-0.5rem + 100vw);
+                            padding: 15rem 0.6rem 0.6rem;
                 }
 </style>""", unsafe_allow_html=True)
 
