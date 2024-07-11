@@ -1,4 +1,4 @@
-# streamlit-llamaindex-chatbot-advisor
+# 💬 streamlit-llamaindex-chatbot-advisor
 
 ## About
 
