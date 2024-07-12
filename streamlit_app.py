@@ -13,6 +13,9 @@ css = r'''
         max-width: 100vw;
         padding: 2rem 1rem 1rem;
         }
+        h1 {
+        padding: 0.25rem 0px 1rem;
+        }
     </style>
 '''
 
