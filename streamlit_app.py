@@ -10,8 +10,11 @@ css = r'''
         [data-testid="stForm"] {border: 0px;}
         [data-testid="stApp"] {border: 0px;}
         div.block-container {max-width: 100vw;}
-        iframe:after, :before {
-        border: none;
+        iframe::after {
+        border: 0px !important;
+        }
+        iframe::before {
+        border: 0px !important;
         }
     </style>
 '''
