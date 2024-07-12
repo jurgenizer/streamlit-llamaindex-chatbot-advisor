@@ -8,18 +8,18 @@ st.set_page_config(page_title="adlicious advisor 💬 ", page_icon="🦙", layou
 css = r'''
     <style>
         [data-testid="stForm"] {border: 0px;}
-        [data-testid="stApp"] {border: 0px}
-        div.block-container {
-                            max-width: 100vw;
-                }
+        [data-testid="stApp"] {border: 0px;}
+        div.block-container {max-width: 100vw;}
+        iframe:after, :before {
+        border: none;
+        }
     </style>
 '''
 
 st.markdown(css, unsafe_allow_html=True)
 
-
-
 openai.api_key = st.secrets.openai_key
+
 st.title("adlicious advisor 💬")
 st.info("Hello, I am an AI bot: chat with me about anything! Interested in running ads with AI? Contact our adlicious team.")
 
