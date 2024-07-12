@@ -9,7 +9,10 @@ css = r'''
     <style>
         [data-testid="stForm"] {border: 0px;}
         [data-testid="stApp"] {border: 0px;}
-        div.block-container {max-width: 100vw;}
+        div.block-container {
+        max-width: 100vw;
+        padding: 3rem 1rem 1rem;
+        }
     </style>
 '''
 
@@ -17,11 +20,11 @@ st.markdown(css, unsafe_allow_html=True)
 
 openai.api_key = st.secrets.openai_key
 
-st.link_button(" Interested in running ads with AI? Contact our adlicious team.", "https://www.adlicious.me/contact", type="primary")
 st.title("adlicious advisor 💬")
-# st.info("Hello, I am an AI bot: chat with me about digital advertising!")
 
+st.info("Hello, I am an AI bot: chat with me about digital advertising! Interested in running ads with AI? Contact our adlicious team")
 
+# st.link_button("Interested in running ads with AI? Contact our adlicious team", "https://www.adlicious.me/contact", type="primary")
 
 if "messages" not in st.session_state.keys():  # Initialize the chat messages history
     st.session_state.messages = [
@@ -68,3 +71,4 @@ if st.session_state.messages[-1]["role"] != "assistant":
         message = {"role": "assistant", "content": response_stream.response}
         # Add response to message history
         st.session_state.messages.append(message)
+
