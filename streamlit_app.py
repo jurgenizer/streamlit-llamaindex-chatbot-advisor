@@ -16,9 +16,10 @@ css = r'''
 st.markdown(css, unsafe_allow_html=True)
 
 openai.api_key = st.secrets.openai_key
+
 st.link_button(" Interested in running ads with AI? Contact our adlicious team.", "https://www.adlicious.me/contact", type="primary")
 st.title("adlicious advisor 💬")
-st.info("Hello, I am an AI bot: chat with me about digital advertising!")
+# st.info("Hello, I am an AI bot: chat with me about digital advertising!")
 
 
 
