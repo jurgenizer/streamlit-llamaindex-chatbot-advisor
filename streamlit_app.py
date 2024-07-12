@@ -11,7 +11,7 @@ css = r'''
         [data-testid="stApp"] {border: 0px;}
         div.block-container {
         max-width: 100vw;
-        padding: 2rem 1rem 1rem;
+        padding: 2rem 0.8rem 0.8rem;
         }
         h1 {
         padding: 0.25rem 0px 1rem;
