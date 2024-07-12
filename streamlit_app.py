@@ -3,7 +3,7 @@ import openai
 from llama_index.llms.openai import OpenAI
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 
-st.set_page_config(page_title="adlicious advisor 💬", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title="💬 adlicious advisor", page_icon="💬", layout="centered", initial_sidebar_state="auto", menu_items=None)
 
 css = r'''
     <style>
