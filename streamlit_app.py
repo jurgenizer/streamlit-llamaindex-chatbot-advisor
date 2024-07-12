@@ -3,19 +3,13 @@ import openai
 from llama_index.llms.openai import OpenAI
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Settings
 
-st.set_page_config(page_title="adlicious advisor 💬 ", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
+st.set_page_config(page_title="adlicious advisor 💬", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
 
 css = r'''
     <style>
         [data-testid="stForm"] {border: 0px;}
         [data-testid="stApp"] {border: 0px;}
         div.block-container {max-width: 100vw;}
-        iframe::after {
-        border: 0px !important;
-        }
-        iframe::before {
-        border: 0px !important;
-        }
     </style>
 '''
 
@@ -24,7 +18,9 @@ st.markdown(css, unsafe_allow_html=True)
 openai.api_key = st.secrets.openai_key
 
 st.title("adlicious advisor 💬")
-st.info("Hello, I am an AI bot: chat with me about digital advertising! Interested in running ads with AI? Contact our adlicious team.")
+st.info("Hello, I am an AI bot: chat with me about digital advertising!")
+
+st.link_button(" Interested in running ads with AI? Contact our adlicious team.", "https://www.adlicious.me/contact", type="primary")
 
 if "messages" not in st.session_state.keys():  # Initialize the chat messages history
     st.session_state.messages = [
