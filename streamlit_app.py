@@ -25,7 +25,7 @@ openai.api_key = st.secrets.openai_key
 
 st.title("adlicious advisor 💬")
 
-st.info("Hello, I am an AI bot: chat with me about digital advertising! Interested in running ads with AI? [Contact our adlicious team](mailto:welcome@adlicious.me)")
+st.info("Hello, I am an AI bot: chat with me about digital advertising! Interested in running ads with AI? [Contact our adlicious team](https://www.adlicious.me/contact)")
 
 if "messages" not in st.session_state.keys():  # Initialize the chat messages history
     st.session_state.messages = [
